@@ -1,0 +1,24 @@
+<div style="display: flex; flex-flow: column; background-color: lightgrey; height: 100%;">
+    <div>
+        <div style="display: flex; flex-flow: row; justify-content: center; margin-top: 45px;">
+            <mat-form-field style="width: 300px;">
+                <mat-label>Логин</mat-label>
+                <input matInput [(ngModel)]="userlogin">
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-flow: row; justify-content: center; margin-top: 10px">
+            <mat-form-field style="width: 300px;">
+                <mat-label>Пароль</mat-label>
+                <input type="password" matInput [(ngModel)]="password">
+            </mat-form-field>
+        </div>
+    </div>
+    <div style="display: flex; flex-flow: row; margin-top: 10px">
+        <button mat-button style="width: 200px; margin-left: 60px; margin-right: 40px; background-color: whitesmoke" (click)="login()">
+            Вход
+        </button>
+        <button mat-button style="width: 200px; margin-left: 40px; margin-right: 60px; background-color: whitesmoke" (click)="register()">
+            Регистрация
+        </button>
+    </div>
+</div>

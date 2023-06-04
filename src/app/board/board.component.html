@@ -1,0 +1,19 @@
+<div style="display: flex; flex-flow: column; align-items: center;">
+    <div style="display: flex; flex-flow: row;">
+        <div style="flex: 1 1;"></div>
+        <mat-grid-list [cols]="rowLen" rowHeight="100px" rowHeight="1:1" style="width: 800px; align-self: center; height: 100%;">
+            <mat-grid-tile *ngFor="let el of elements; let idx=index;" (click)="OnClick(idx)" [ngClass]="{'highlight': elements[idx].num != -1}" style="cursor: pointer; border-radius: 7px;">
+                <div class="non-selectable" *ngIf="elements[idx].num != -1" (click)="OnClickNumber($event, idx)" style="cursor: pointer;">
+                    <div style="display: flex; flex-flow: column; justify-content: center;">
+                        <label style="font-size: 16pt; font-weight: 400;">{{ elements[idx].num }}</label>
+                    </div>
+                </div> 
+            </mat-grid-tile>
+        </mat-grid-list>
+        <div style="flex: 1 1;"></div>
+    </div>
+    <div style="margin-top: 20px;">
+        <button *ngIf="!play_timer" mat-button (click)="randomEllements()" style="align-self: center; background-color: whitesmoke; font-size: large;">Начать игру</button>
+        <button *ngIf="play_timer" mat-button style="align-self: center; background-color: whitesmoke; font-size: large;"> {{ counter }} с</button>
+    </div>
+</div>

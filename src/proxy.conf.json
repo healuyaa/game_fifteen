@@ -1,0 +1,19 @@
+{
+  "/api": {
+    "target": "http://127.0.0.1:8080",
+    "secure": false,
+    "pathRewrite": {
+      "/api": "/api"
+    },
+    "logLevel": "debug"
+  },
+  "/apiws": {
+    "target": "ws://192.168.1.171:81",
+    "secure": false,
+    "ws": true,
+    "pathRewrite": {
+      "/apiws": "/apiws"
+    },
+    "logLevel": "debug"
+  }
+}

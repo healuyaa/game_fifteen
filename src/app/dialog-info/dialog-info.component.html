@@ -1,0 +1,23 @@
+<div style="display: flex; flex-flow: row;">
+    <div style="width: 100%;">
+        <div style="display: flex; flex-flow: column;">
+            <mat-dialog-content style="font-size: medium; color: black; font-size: 16pt; font-weight: 400; align-self: center;">Лучшие результаты:</mat-dialog-content>
+            <table>
+                <tr *ngFor="let item of data.results.results">
+                    <td>
+                        {{item.login}}
+                    </td>
+                    <td *ngIf="item.result == 9999999">
+                        {{"none"}}
+                    </td>
+                    <td *ngIf="item.result != 9999999">
+                        {{ item.result }}
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="width: 60px;">
+        <button mat-button style="margin-top: 10px; margin-right: 10px; background-color: lightgrey" (click)="dialogRef.close()">Закрыть</button>
+    </div>
+</div> 

@@ -1,0 +1,8 @@
+mat-grid-tile {
+    background: darkgrey;
+}
+
+.mat-grid-tile.highlight {
+    background-color: silver;
+}
+

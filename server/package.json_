@@ -1,0 +1,55 @@
+{
+  "name": "D1Hub7",
+  "version": "7.0.0",
+  "description": "git config credential.helper store apt install snmp apt install rrdtools",
+  "main": "hub.js",
+  "dependencies": {
+    "dateformat": "^3.0.3",
+    "express": "^4.17.3",
+    "express-ws": "^4.0.0",
+    "firebase-admin": "^11.5.0",
+    "graphviz": "0.0.9",
+    "intel": "^1.2.0",
+    "miio": "^0.14.1",
+    "moment": "^2.29.4",
+    "mqtt": "^4.3.7",
+    "mysql": "^2.18.1",
+    "net-snmp": "^1.2.5",
+    "node-plantuml": "^0.9.0",
+    "node-schedule": "^1.3.2",
+    "node-worker": "0.0.2",
+    "onoff": "^4.1.4",
+    "raspicam": "^0.2.14",
+    "raspivid-stream": "^0.2.1",
+    "read-chunk": "^4.0.3",
+    "snmp-native": "^1.2.0",
+    "stream-concat": "^0.3.0",
+    "suncalc": "^1.9.0",
+    "sys-info": "^1.0.2",
+    "sysinfo": "^0.0.1",
+    "systeminformation": "^5.17.12",
+    "util": "^0.12.3",
+    "uuid": "^3.4.0",
+    "videostream": "^3.2.1",
+    "web-push": "^3.4.4",
+    "worker": "^0.4.0",
+    "worker-threads": "^1.0.0",
+    "ws": "^7.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.28",
+    "typescript": "^4.6.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://192.168.1.75/git/Dima/D1Hub7.API"
+  }
+}

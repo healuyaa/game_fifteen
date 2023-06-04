@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.non-selectable {
+    -webkit-user-select: none; /* для Webkit браузеров */
+    -moz-user-select: none; /* для Mozilla браузеров */
+    -ms-user-select: none; /* для IE браузеров */
+    user-select: none; /* стандартный вариант */
+}
+
+.circled {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  justify-content: center;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 150px;
+  padding: 8px;
+}
+  
